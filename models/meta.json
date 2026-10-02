@@ -1,17 +1,17 @@
 {
-  "synthetic": true,
+  "synthetic": false,
   "pass_mark": 10,
   "quality_before": {
-    "missing_cells": 85,
-    "duplicate_rows": 15,
-    "whitespace_cells": 58,
-    "issue_rate_pct": 4.72
-  },
-  "quality_after": {
-    "missing_cells": 81,
+    "missing_cells": 0,
     "duplicate_rows": 0,
     "whitespace_cells": 0,
-    "issue_rate_pct": 0.62
+    "issue_rate_pct": 0.0
+  },
+  "quality_after": {
+    "missing_cells": 0,
+    "duplicate_rows": 0,
+    "whitespace_cells": 0,
+    "issue_rate_pct": 0.0
   },
   "features": {
     "early": [
@@ -83,48 +83,48 @@
   },
   "top_drivers": {
     "early": {
-      "failures": 0.1072,
-      "higher": 0.0354,
-      "school": 0.0169,
-      "activities": 0.0152,
-      "internet": 0.0093,
-      "famsize": 0.0084
+      "address": 0.0338,
+      "Walc": 0.0262,
+      "health": 0.016,
+      "studytime": 0.0143,
+      "famrel": 0.0143,
+      "activities": 0.0143
     },
     "with_grades": {
-      "G2": 0.1789,
-      "G1": 0.0295,
-      "address": 0.0,
-      "age": 0.0,
-      "Medu": 0.0,
-      "guardian": 0.0
+      "G2": 0.2574,
+      "absences": 0.011,
+      "G1": 0.0101,
+      "famrel": 0.0051,
+      "goout": 0.0025,
+      "failures": 0.0025
     }
   },
   "defaults": {
-    "age": 18.0,
-    "Medu": 2.0,
+    "age": 17.0,
+    "Medu": 3.0,
     "Fedu": 2.0,
-    "traveltime": 2.0,
+    "traveltime": 1.0,
     "studytime": 2.0,
     "failures": 0.0,
-    "famrel": 3.0,
+    "famrel": 4.0,
     "freetime": 3.0,
     "goout": 3.0,
-    "Dalc": 3.0,
-    "Walc": 3.0,
-    "health": 3.0,
+    "Dalc": 1.0,
+    "Walc": 2.0,
+    "health": 4.0,
     "absences": 4.0,
     "school": "GP",
-    "sex": "M",
+    "sex": "F",
     "address": "U",
     "famsize": "GT3",
     "Pstatus": "T",
-    "Mjob": "teacher",
+    "Mjob": "other",
     "Fjob": "other",
-    "reason": "other",
+    "reason": "course",
     "guardian": "mother",
     "schoolsup": "no",
     "famsup": "yes",
-    "paid": "yes",
+    "paid": "no",
     "activities": "yes",
     "nursery": "yes",
     "higher": "yes",
@@ -213,7 +213,7 @@
   "ranges": {
     "age": [
       15,
-      21
+      22
     ],
     "Medu": [
       0,
@@ -233,7 +233,7 @@
     ],
     "failures": [
       0,
-      2
+      3
     ],
     "famrel": [
       1,
@@ -261,19 +261,19 @@
     ],
     "absences": [
       0,
-      29
+      75
     ],
     "G1": [
-      0,
-      20
+      3,
+      19
     ],
     "G2": [
       0,
-      20
+      19
     ]
   },
   "clf_early": "Random Forest",
-  "reg_early": "Ridge Regression",
+  "reg_early": "Random Forest",
   "clf_with_grades": "Random Forest",
-  "reg_with_grades": "Ridge Regression"
+  "reg_with_grades": "Random Forest"
 }
