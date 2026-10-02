@@ -1,0 +1,279 @@
+{
+  "synthetic": true,
+  "pass_mark": 10,
+  "quality_before": {
+    "missing_cells": 85,
+    "duplicate_rows": 15,
+    "whitespace_cells": 58,
+    "issue_rate_pct": 4.72
+  },
+  "quality_after": {
+    "missing_cells": 81,
+    "duplicate_rows": 0,
+    "whitespace_cells": 0,
+    "issue_rate_pct": 0.62
+  },
+  "features": {
+    "early": [
+      "school",
+      "sex",
+      "age",
+      "address",
+      "famsize",
+      "Pstatus",
+      "Medu",
+      "Fedu",
+      "Mjob",
+      "Fjob",
+      "reason",
+      "guardian",
+      "traveltime",
+      "studytime",
+      "failures",
+      "schoolsup",
+      "famsup",
+      "paid",
+      "activities",
+      "nursery",
+      "higher",
+      "internet",
+      "romantic",
+      "famrel",
+      "freetime",
+      "goout",
+      "Dalc",
+      "Walc",
+      "health",
+      "absences"
+    ],
+    "with_grades": [
+      "school",
+      "sex",
+      "age",
+      "address",
+      "famsize",
+      "Pstatus",
+      "Medu",
+      "Fedu",
+      "Mjob",
+      "Fjob",
+      "reason",
+      "guardian",
+      "traveltime",
+      "studytime",
+      "failures",
+      "schoolsup",
+      "famsup",
+      "paid",
+      "activities",
+      "nursery",
+      "higher",
+      "internet",
+      "romantic",
+      "famrel",
+      "freetime",
+      "goout",
+      "Dalc",
+      "Walc",
+      "health",
+      "absences",
+      "G1",
+      "G2"
+    ]
+  },
+  "top_drivers": {
+    "early": {
+      "failures": 0.1072,
+      "higher": 0.0354,
+      "school": 0.0169,
+      "activities": 0.0152,
+      "internet": 0.0093,
+      "famsize": 0.0084
+    },
+    "with_grades": {
+      "G2": 0.1789,
+      "G1": 0.0295,
+      "address": 0.0,
+      "age": 0.0,
+      "Medu": 0.0,
+      "guardian": 0.0
+    }
+  },
+  "defaults": {
+    "age": 18.0,
+    "Medu": 2.0,
+    "Fedu": 2.0,
+    "traveltime": 2.0,
+    "studytime": 2.0,
+    "failures": 0.0,
+    "famrel": 3.0,
+    "freetime": 3.0,
+    "goout": 3.0,
+    "Dalc": 3.0,
+    "Walc": 3.0,
+    "health": 3.0,
+    "absences": 4.0,
+    "school": "GP",
+    "sex": "M",
+    "address": "U",
+    "famsize": "GT3",
+    "Pstatus": "T",
+    "Mjob": "teacher",
+    "Fjob": "other",
+    "reason": "other",
+    "guardian": "mother",
+    "schoolsup": "no",
+    "famsup": "yes",
+    "paid": "yes",
+    "activities": "yes",
+    "nursery": "yes",
+    "higher": "yes",
+    "internet": "yes",
+    "romantic": "no"
+  },
+  "options": {
+    "school": [
+      "GP",
+      "MS"
+    ],
+    "sex": [
+      "F",
+      "M"
+    ],
+    "address": [
+      "R",
+      "U"
+    ],
+    "famsize": [
+      "GT3",
+      "LE3"
+    ],
+    "Pstatus": [
+      "A",
+      "T"
+    ],
+    "Mjob": [
+      "at_home",
+      "health",
+      "other",
+      "services",
+      "teacher"
+    ],
+    "Fjob": [
+      "at_home",
+      "health",
+      "other",
+      "services",
+      "teacher"
+    ],
+    "reason": [
+      "course",
+      "home",
+      "other",
+      "reputation"
+    ],
+    "guardian": [
+      "father",
+      "mother",
+      "other"
+    ],
+    "schoolsup": [
+      "no",
+      "yes"
+    ],
+    "famsup": [
+      "no",
+      "yes"
+    ],
+    "paid": [
+      "no",
+      "yes"
+    ],
+    "activities": [
+      "no",
+      "yes"
+    ],
+    "nursery": [
+      "no",
+      "yes"
+    ],
+    "higher": [
+      "no",
+      "yes"
+    ],
+    "internet": [
+      "no",
+      "yes"
+    ],
+    "romantic": [
+      "no",
+      "yes"
+    ]
+  },
+  "ranges": {
+    "age": [
+      15,
+      21
+    ],
+    "Medu": [
+      0,
+      4
+    ],
+    "Fedu": [
+      0,
+      4
+    ],
+    "traveltime": [
+      1,
+      4
+    ],
+    "studytime": [
+      1,
+      4
+    ],
+    "failures": [
+      0,
+      2
+    ],
+    "famrel": [
+      1,
+      5
+    ],
+    "freetime": [
+      1,
+      5
+    ],
+    "goout": [
+      1,
+      5
+    ],
+    "Dalc": [
+      1,
+      5
+    ],
+    "Walc": [
+      1,
+      5
+    ],
+    "health": [
+      1,
+      5
+    ],
+    "absences": [
+      0,
+      29
+    ],
+    "G1": [
+      0,
+      20
+    ],
+    "G2": [
+      0,
+      20
+    ]
+  },
+  "clf_early": "Random Forest",
+  "reg_early": "Ridge Regression",
+  "clf_with_grades": "Random Forest",
+  "reg_with_grades": "Ridge Regression"
+}

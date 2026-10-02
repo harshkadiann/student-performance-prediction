@@ -1,0 +1,13 @@
+scenario,task,model,cv_score,accuracy,f1,r2,rmse,mae
+early,classification,Logistic Regression,0.6806,0.7215,0.7179,,,
+early,classification,Random Forest,0.6898,0.6962,0.6923,,,
+early,classification,Gradient Boosting,0.6773,0.6329,0.6234,,,
+early,regression,Ridge Regression,0.1975,,,0.3926,3.39,2.591
+early,regression,Random Forest,0.1641,,,0.369,3.455,2.715
+early,regression,Gradient Boosting,0.0667,,,0.2731,3.709,2.963
+with_grades,classification,Logistic Regression,0.8449,0.8734,0.8718,,,
+with_grades,classification,Random Forest,0.8861,0.8608,0.8642,,,
+with_grades,classification,Gradient Boosting,0.8575,0.8861,0.8831,,,
+with_grades,regression,Ridge Regression,0.5679,,,0.736,2.235,1.264
+with_grades,regression,Random Forest,0.5521,,,0.7451,2.196,1.317
+with_grades,regression,Gradient Boosting,0.5043,,,0.6956,2.4,1.413
